@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Soporte — EvoFitness Gym</title>
+<meta name="description" content="Soporte para la aplicación EvoFitness Gym. Contáctanos por correo o WhatsApp." />
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f8fafc;
+    --surface: #ffffff;
+    --border: #e2e8f0;
+    --text: #0f172a;
+    --text-secondary: #334155;
+    --text-muted: #64748b;
+    --primary: #6366f1;
+    --whatsapp: #25d366;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --border: #334155;
+      --text: #f1f5f9;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
+      --primary: #818cf8;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+  }
+  header { margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+  h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: -0.02em; }
+  header p { margin: 0; color: var(--text-muted); font-size: 14px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.1s ease, border-color 0.1s ease;
+  }
+  .card:hover {
+    border-color: var(--primary);
+    transform: translateY(-1px);
+  }
+  .card .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+  .icon.email { background: color-mix(in srgb, var(--primary) 15%, transparent); }
+  .icon.wa { background: color-mix(in srgb, var(--whatsapp) 15%, transparent); }
+  .card .content { flex: 1; min-width: 0; }
+  .card .label { font-size: 13px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px; }
+  .card .value { font-size: 16px; font-weight: 600; color: var(--text); word-break: break-all; }
+  h2 { font-size: 18px; margin: 32px 0 12px; }
+  p { margin: 0 0 12px; color: var(--text-secondary); }
+  footer {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 13px;
+    text-align: center;
+  }
+  footer a { color: var(--primary); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  .nav { margin-bottom: 20px; font-size: 14px; }
+  .nav a { color: var(--text-muted); text-decoration: none; }
+  .nav a:hover { color: var(--primary); }
+  ul { padding-left: 20px; color: var(--text-secondary); }
+  li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav"><a href="./index.html">&larr; EvoFitness Gym</a></div>
+    <header>
+      <h1>Soporte</h1>
+      <p>¿Tienes una duda o problema con la app? Contáctanos.</p>
+    </header>
+
+    <a class="card" href="mailto:evofitnessteam@outlook.com">
+      <div class="icon email">✉️</div>
+      <div class="content">
+        <div class="label">Correo electrónico</div>
+        <div class="value">evofitnessteam@outlook.com</div>
+      </div>
+    </a>
+
+    <a class="card" href="https://wa.me/526128681968?text=Hola%2C%20necesito%20ayuda%20con%20la%20app%20EvoFitness">
+      <div class="icon wa">💬</div>
+      <div class="content">
+        <div class="label">WhatsApp</div>
+        <div class="value">+52 612 868 1968</div>
+      </div>
+    </a>
+
+    <h2>Preguntas comunes</h2>
+    <p><strong>Olvidé mi contraseña.</strong> En la pantalla de inicio de sesión, toca "¿Olvidaste tu contraseña?" e ingresa tu número de teléfono. Recibirás un SMS con un código para restablecerla.</p>
+
+    <p><strong>No recibo el código por SMS.</strong> Espera 60 segundos y vuelve a solicitarlo. Si después de varios intentos no llega, escríbenos por WhatsApp o correo.</p>
+
+    <p><strong>Mi membresía aparece como vencida.</strong> Tu coach actualiza la membresía manualmente cuando registras un pago. Si pagaste y aún ves "vencida", contáctanos.</p>
+
+    <p><strong>Quiero darme de baja / eliminar mi cuenta.</strong> Escríbenos por correo a evofitnessteam@outlook.com y solicitamos la cancelación. Tus datos se mantendrán únicamente el tiempo necesario para cumplir obligaciones legales, conforme al <a href="./privacidad.html">Aviso de Privacidad</a>.</p>
+
+    <h2>Horario de atención</h2>
+    <ul>
+      <li>Lunes a viernes: 5:00 AM — 10:00 PM (Mazatlán)</li>
+      <li>Sábado y domingo: cerrado</li>
+    </ul>
+    <p style="color: var(--text-muted); font-size: 13px;">Respondemos los mensajes de soporte en horario laboral. Los mensajes fuera de ese horario los atendemos al siguiente día hábil.</p>
+
+    <footer>
+      <p><a href="./privacidad.html">Aviso de Privacidad</a></p>
+      <p>© EvoFitness Gym</p>
+    </footer>
+  </div>
+</body>
+</html>
